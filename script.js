@@ -416,7 +416,7 @@ function showWinnerInfo(winner, container) {
 
     // 선택한 포스터를 업데이트합니다.
     const selectedPoster = document.createElement("img");
-    selectedPoster.src = `../images/${winner.podium[0].country.flag}`; // 우승 국가의 국기로 변경
+    selectedPoster.src = `./${winner.podium[0].country.flag}`; // 우승 국가의 국기로 변경
     selectedPoster.alt = `${winner.podium[0].country.name} 포스터`;
 
     // 컨테이너 내의 기존 내용을 제거합니다.
