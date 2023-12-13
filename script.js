@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function createWinnerListItem(winner) {
     const listItem = document.createElement("li");
     const poster = document.createElement("img");  // 포스터에 사용될 이미지 엘리먼트 생성
-    poster.src = `../images/${winner.champion.flag}`;
+    poster.src = `./${winner.champion.flag}`;
     poster.alt = `${winner.champion.country} 포스터`;
     poster.className = "world-cup-poster";  // world-cup-poster 클래스 추가
     listItem.appendChild(poster);
@@ -341,7 +341,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function createPoster(winner, container) {
     const poster = document.createElement("img");
-    poster.src = `../images/${winner.champion.flag}`;
+    poster.src = `./${winner.champion.flag}`;
     poster.alt = `${winner.champion.country} 포스터`;
     poster.className = "world-cup-poster";
 
